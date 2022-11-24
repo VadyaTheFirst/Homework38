@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 
 public class Prescription {
@@ -31,4 +28,18 @@ public class Prescription {
     public String getPrescriptionName() {
         return prescriptionName;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Prescription that = (Prescription) o;
+        return prescriptionName.equals(that.prescriptionName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(prescriptionName);
+    }
 }
+
