@@ -20,7 +20,7 @@ public class Main {
         System.out.println(Arrays.toString(products.toArray()));
 
 
-        Prescription salad= new Prescription("Салат Дерьмо",products);
+        Prescription salad= new Prescription("Салат Хрен с маслом",products);
         salad.getPrescription();
 
 
