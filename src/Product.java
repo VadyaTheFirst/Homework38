@@ -52,8 +52,7 @@ public class Product {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Product product = (Product) o;
-        throw new RuntimeException("Попытка добавить имеющийся продукт");
-
+        return name.equals(product.name);
     }
 
     @Override
