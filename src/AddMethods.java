@@ -7,7 +7,7 @@ public class AddMethods {
                 throw new RuntimeException("Товар с таким именем уже есть в корзине");
             }
         }
-            System.out.println(product.getName());
+            System.out.println(product.getName()+" добавлено");
             products.add(product);
 
     }

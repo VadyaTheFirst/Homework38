@@ -12,8 +12,9 @@ public class Main {
         AddMethods.addProduct (products,new Product("Вода", 2, 1, 2));
         //AddMethods.addProduct (products,new Product("Вода", 1, 1, 2));
         AddMethods.addProduct (products,new Product("Кофе", 2, 1, 2));
-        Product cheese = new Product("Сыр", 1, 1, 48);
-        products.add(cheese);
+        Product cheese= new Product("Сыр", 1, 1, 48);
+        AddMethods.addProduct (products, cheese);
+
 
         Set<Product> saladProducts1 = new HashSet<>();
         saladProducts1.add(new Product("Хрен}", 2, 1, 2));
